@@ -1,0 +1,72 @@
+.nav {
+  background-color: var(--colorDeNav);
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
+}
+
+.etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 2rem;
+}
+
+.btn {
+  all: unset;
+  padding: 1px 4px 4px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  transition-duration: 200ms;
+  background-color: var(--colorBoton);
+  color: var(--colorDeNav);
+  margin: 5px;
+  border: 3px solid #969897;
+  ;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  color: var(--colorBoton);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sub {
+  overflow: hidden;
+  border: none;
+  background: none;
+  position: relative;
+  padding-bottom: 0.3em;
+  cursor: pointer;
+}
+
+.sub:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background: currentColor;
+  transition: transform 0.25s ease-out;
+}
+
+.sub:hover:before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

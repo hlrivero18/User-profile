@@ -1,0 +1,40 @@
+.fullScreen {
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.538);
+    display: grid;
+    place-items: center
+}
+
+.window{
+    z-index: 20;
+    padding: 2rem;
+    text-align: start;
+    margin: 6rem auto 0 auto;
+    border-radius: 10px;
+    background-color: var(--colorDeCard);
+    box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
+}
+
+.successfully{
+    color: #059212;
+    text-align: center;
+}
+
+.successfully span{
+    font-size: 100px;
+}
+
+.error{
+    color: red;
+    text-align: center;
+}
+.error span{
+    font-size: 100px;
+}

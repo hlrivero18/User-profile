@@ -1,0 +1,171 @@
+/*estilos de toda la etiqueta padre */
+.container{
+    background-color: var(--colorDeFondo);
+    padding: 6rem;
+}
+/* Estilos que envuelven la etiqueta window */
+.window {
+    padding: 2rem;
+    margin: 0 auto 0 auto;
+    text-align: start;
+    width: 40rem;
+    border-radius: 10px;
+    background-color: var(--colorDeCard);
+    box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
+}
+/* Estilos para envolver formularios, titulos, boton y animaciones */
+.titulo{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.formulario {
+    width: 100%;
+    display: grid;
+    gap: 15px;
+}
+
+.divMessage {
+    width: 100%;
+    overflow: hidden;  
+}
+
+.divMessage label{
+    display: block;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #05060f99;
+    transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.message {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 10rem;
+    background-color: #05060f0a;
+    border-radius: .5rem;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.groupi {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inputGroup input {
+    height: 44px;
+    background-color: #05060f0a;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    transition: border-color .3s cubic-bezier(.25, .01, .25, 1) 0s, color .3s cubic-bezier(.25, .01, .25, 1) 0s, background .2s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.inputGroup label {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    font-weight: bold;
+    color: #05060f99;
+    transition: color .3s cubic-bezier(.25, .01, .25, 1) 0s;
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover,
+.input,
+.email:hover,
+.email:focus,
+.message:hover {
+    outline: none;
+    border-color: #05060f;
+}
+
+.email {
+    width: 100%;
+}
+
+.btn {
+    all: unset;
+    height: 2rem;
+    padding: 1px 4px 4px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    transition-duration: 200ms;
+    background-color: var(--colorBoton);
+    color: var(--colorDeNav);
+    margin: 5px;
+    border: 3px solid #969897;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    color: var(--colorBoton);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btnLoading{
+    all: unset;
+    padding: 1px 4px 4px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    transition-duration: 200ms;
+    background-color: #FF5F00;
+    color: var(--colorDeNav);
+    margin: 5px;
+    border: 3px solid #FF9F66;
+}
+
+.btnLoading:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.loader {
+    border: 4px solid rgba(0, 0, 0, .1);
+    border-left-color: transparent;
+    border-radius: 50%;
+  }
+  
+  .loader {
+    border: 4px solid rgba(0, 0, 0, .1);
+    border-left-color: transparent;
+    width: 36px;
+    height: 36px;
+  }
+  
+  .loader {
+    border: 4px solid rgba(0, 0, 0, .1);
+    border-left-color: transparent;
+    width: 36px;
+    height: 36px;
+    animation: spin89345 1s linear infinite;
+  }
+  
+  @keyframes spin89345 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }

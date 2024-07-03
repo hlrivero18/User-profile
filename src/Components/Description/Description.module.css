@@ -1,0 +1,23 @@
+.container {
+    text-align: start;
+    margin: 2rem auto 0 auto;
+    width: 40rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--colorDeCard);
+    box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
+}
+
+.description {
+    margin-top: 5px;
+    font-size: small;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 90%;
+        margin: 1.5rem 1rem 0 1rem;
+    }
+}
