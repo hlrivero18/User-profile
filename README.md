@@ -1,6 +1,6 @@
-# Proyecto React CRUD
+# Proyecto Next Perfil de Usuario
 
-Este proyecto es un CRUD básico desarrollado en React, utilizando Next.js como framework principal. El objetivo es mostrar un perfil de ususario basico, una seccion de contacto con un formulario  y diversas características modernas de desarrollo en React.
+Este proyecto es un perfil de usuario desarrollado en React, utilizando Next.js como framework principal. El objetivo es mostrar un perfil de ususario basico, una seccion de contacto con un formulario  y diversas características modernas de desarrollo en React.
 
 ## Requisitos del Sistema
 
@@ -44,7 +44,7 @@ Asegúrate de tener Node.js y npm instalados en tu máquina antes de ejecutar el
 -
 
  ## Visualización en Línea
--  El proyecto está desplegado, puedes acceder a él [aquí](https://vercel.com/hlrivero18s-projects/user-profile/FLmx4xnFL3wiqojRnCHFGUSeCFwn)
+-  El proyecto está desplegado, puedes acceder a él [aquí](https://user-profile-rho.vercel.app/)
 
  ## Contribuciones
 - Siéntete libre de contribuir al proyecto abriendo problemas (issues) o enviando solicitudes de extracción (pull requests).
