@@ -107,7 +107,7 @@
     background-color: var(--colorBoton);
     color: var(--colorDeNav);
     margin: 5px;
-    border: 3px solid #969897;
+    border: 3px solid var(--colorBorde);
 }
 
 .btn:hover {
@@ -169,3 +169,24 @@
       transform: rotate(360deg);
     }
   }
+
+  
+@media (max-width: 768px) {
+    .container{
+        padding: 4rem 1rem 1rem 1rem;
+    }
+    .window{
+        width: 90%;
+        margin: 1.5rem 1rem 0 1rem;
+        padding: 30px;
+    }
+    .formulario{
+        display: block;
+    }
+    .groupi{
+        display:contents;
+    }
+    .groupi input{
+        width: 100%;
+    }
+}

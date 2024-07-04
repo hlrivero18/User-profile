@@ -1,0 +1,29 @@
+.container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1.5rem auto;
+    gap: 10px;
+}
+
+.container div{
+    font-size: 13px;
+    background-color: gainsboro;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.container div:hover{
+    cursor: pointer;
+}
+
+.container p {
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 80%;
+    }
+}

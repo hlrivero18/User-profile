@@ -1,17 +1,10 @@
 import style from './Header.module.css'
-import perfil from '../../../public/img/perfil.jpg'
-import portada from '../../../public/img/portada.jpg'
 import Description from '../Description/Description'
+import Interesting from '../Interesting/Interesting'
 
-export default function Header() {
-    //establezco un objeto definido, simulando un dato que me llegaria por servidor
-    const user = {
-        name: 'Max Lopez 🐾',
-        username: '@maquinadelmal2000',
-        imagenPerfil: perfil.src,
-        imagenPortada: portada.src
-    }
+export default function Header({user}) {
     return (
+        user &&
         <header className={style.container}>
             {/*Foto de Portada*/}
             <div className={style.portada}>
@@ -27,7 +20,9 @@ export default function Header() {
                 <h5>{user.username}</h5>
             </div>
             {/*Descripcion del usuario*/}
-            <Description/>
+            <Description description={user.description}/>
+             {/*seccion de interes*/}
+             <Interesting interesting={user.interesting}/>
         </header>
     )
 }

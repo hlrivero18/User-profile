@@ -1,0 +1,46 @@
+.footer{
+    border-top: 8px solid var(--colorBorde);
+    background-color: var(--colorDeCard);
+}
+
+.container{
+    width: 100%;
+    padding: 2rem;
+}
+
+.container ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 3rem;
+}
+
+.container ul li{
+    list-style-type: none;
+
+}
+
+.container ul a{
+    all: unset; 
+    color: var(--colorBoton);
+    margin-inline-end: 1rem;
+    text-decoration: none;
+}
+
+.container ul a:hover{
+    color: black;
+}
+
+.container span {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container ul{
+        gap: 1rem;
+    }
+}

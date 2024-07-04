@@ -70,11 +70,11 @@ export default function Contact() {
                     <div className={style.groupi}>
                         <div className={style.inputGroup}>
                             <label className={style.label} htmlFor="name">Nombre</label>
-                            <input className={style.input} autocomplete="off" id='name' type="text" name="name" value={inputs.name} onChange={handleChange} />
+                            <input className={style.input} id='name' type="text" name="name" value={inputs.name} onChange={handleChange} />
                         </div>
                         <div className={style.inputGroup}>
                             <label className={style.label} htmlFor="lastName">Apellido</label>
-                            <input className={style.input} autocomplete="off" id='lastName' type="text" name="lastName" value={inputs.lastName} onChange={handleChange} />
+                            <input className={style.input} id='lastName' type="text" name="lastName" value={inputs.lastName} onChange={handleChange} />
                         </div>
                     </div>
 
