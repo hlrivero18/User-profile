@@ -10,7 +10,7 @@
     place-items: center
 }
 
-.window{
+.window {
     z-index: 20;
     padding: 2rem;
     text-align: start;
@@ -20,21 +20,43 @@
     box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
     -webkit-box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
     -moz-box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
+    animation: jumpIn 1s ease-out forwards;
 }
 
-.successfully{
+.successfully {
     color: #059212;
     text-align: center;
 }
 
-.successfully span{
+.successfully span {
     font-size: 100px;
 }
 
-.error{
+.error {
     color: red;
     text-align: center;
 }
-.error span{
+
+.error span {
     font-size: 100px;
+}
+
+@keyframes jumpIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    80% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }

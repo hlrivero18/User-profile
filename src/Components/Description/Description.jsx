@@ -1,4 +1,5 @@
 import style from "./Description.module.css"
+//obtengo por parametro la descripcion del ususario a mostrar
 
 export default function Description({description}) {
     return (

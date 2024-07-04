@@ -2,6 +2,7 @@
   background-color: var(--colorDeNav);
   height: 3rem;
   position: fixed;
+  z-index: 4;
   top: 0;
   width: 100%;
   padding: 1.5rem;
@@ -11,12 +12,6 @@
   box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
   -webkit-box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
   -moz-box-shadow: 1px 10px 38px -7px rgba(0, 0, 0, 0.39);
-}
-
-.etiquetas {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 2rem;
 }
 
 .btn {
@@ -73,7 +68,8 @@
 
 @media (max-width: 768px) {
   .nav{
-    justify-content: space-around;
+    justify-content: space-between;
+    font-size: 15px;
   }
   .btn{
     margin: 0px;

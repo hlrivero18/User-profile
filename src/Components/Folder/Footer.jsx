@@ -5,6 +5,7 @@ export default function Footer() {
             <div className={style.container}>
                 <div>
                     <ul>
+                        {/* dejo una seccion para los enlaces, mi info, y el repositorio */}
                         <li><a href="https://portafolio-v2-blue.vercel.app/">{'Acerca de mi (Developer)'}</a></li>
                         <li><a href="/contact">Contacta a Max</a></li>
                         <li><a href="https://github.com/hlrivero18/User-profile">Repositorio</a></li>
@@ -16,12 +17,3 @@ export default function Footer() {
         </footer>
     )
 }
-
-
-
-{/* <footer class="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
-        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
-    </div>
-</footer> */}
-

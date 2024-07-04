@@ -45,11 +45,11 @@
 .username h5 {
     opacity: 0.5;
 }
-
+/*establezco los estilos que deseo en una resolucion mas baja*/
 @media (max-width: 768px) {
 
     .container {
-        padding: 1rem;
+        padding: 1rem 0rem;
     }
 
     .portada {

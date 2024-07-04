@@ -6,6 +6,7 @@ export default function Modal({ mensaje, successfully, error, setModalActive, mo
     //convierto los valores de mi objeto "error", a un array de valores
     const listErrors = Object.values(error)
     //esta funcion se encarga de cerrar el modal, si esta true, pasar a false y viceversa
+    //ademas ejecuta el reset del componente padre
     const handleClose = () => {
         setModalActive(!modalActive)
         reset()
@@ -13,6 +14,7 @@ export default function Modal({ mensaje, successfully, error, setModalActive, mo
 
     return (
         <div id='background' className={style.fullScreen} onClick={handleClose}>
+            {/*con event.stop cancelo el handleClose dentro de la ventana modal*/}
             <div className={style.window} onClick={(event) => event.stopPropagation()}>
                 {/*Si hay algo en el parametro mensaje se muestra este bloque */}
                 {mensaje && <p className={style.texto}>{mensaje}</p>}

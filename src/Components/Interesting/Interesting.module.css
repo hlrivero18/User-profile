@@ -8,8 +8,8 @@
 }
 
 .container div{
+    color: var(--colorDeCard);
     font-size: 13px;
-    background-color: gainsboro;
     padding: 0.5rem;
     border-radius: 10px;
 }
@@ -22,6 +22,7 @@
     font-size: 15px;
 }
 
+/*establezco los estilos que deseo en una resolucion mas baja*/
 @media (max-width: 768px) {
     .container{
         width: 80%;

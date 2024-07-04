@@ -1,18 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 /*establezco los resets de mi app y las variables de los colores*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Changa", sans-serif; */
 }
 
-:root{
-  --colorDeFondo : #f4f2ee;
-  --colorDeNav : #ffff;
-  --colorDeCard : #ffff;
+:root {
+  --colorDeFondo: #f4f2ee;
+  --colorDeNav: #ffff;
+  --colorDeCard: #ffff;
   --colorBoton: #6a6e6d;
   --colorBorde: #969897;
+  --textColor: #090909;
+  --textColorLabel: #05060f99;
+  --colorInput:#05060f0a;
 }
 
+.darkMode {
+  --colorDeFondo: #18191a;
+  --colorDeCard: #242526;
+  --colorDeNav: #18191a;
+  --textColor: #ffff;
+}

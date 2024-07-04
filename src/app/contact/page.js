@@ -45,16 +45,18 @@ export default function Contact() {
                 setSuccessfully(true)
                 //por ultimo activamos el modal que nos dira que el envio fue exitoso
                 setModalActive(true)
-                //reseteamos
+                //reseteamos el input en caso de exito
                 setInputs({ name: '', lastName: '', email: '', message: '' })
             }, 2000);
         }
         if (Object.keys(error).length > 0) {
+            //en caso de no haber escrito nada, se abrira un modal que muestre los errores que hay en el formulario
             setModalActive(true)
         }
     }
 
     const reset = () => {
+        //esta funcion resetea la variable error y el succes, con el fin que al ser exitosa la peticion, todo quede bien para un proximo mensaje
         setError({ name: 'Debes colocar un nombre' })
         setSuccessfully(false)
     }
@@ -91,10 +93,10 @@ export default function Contact() {
                         {loading ? <div className={style.loader}></div> : 'Enviar'}
                     </button>
                 </form>
-                {/* segun el estado de la variable modal, los erros y los aciertos que le pase por parametro habra una ventana con un mensaje */}
-                {modalActive && <Modal successfully={successfully} error={error} setModalActive={setModalActive} modalActive={modalActive} reset={reset} />}
-                {/* <Modal successfully={successfully} error={error} setModalActive={setModalActive} modalActive={modalActive}/> */}
+                
             </div>
+            {/* segun el estado de la variable modal, los errores y los aciertos que le pase por parametro habra una ventana con un mensaje */}
+            {modalActive && <Modal successfully={successfully} error={error} setModalActive={setModalActive} modalActive={modalActive} reset={reset} />}
         </div>
 
     )

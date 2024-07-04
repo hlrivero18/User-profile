@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proyecto React CRUD
 
-## Getting Started
+Este proyecto es un CRUD básico desarrollado en React, utilizando Next.js como framework principal. El objetivo es mostrar un perfil de ususario basico, una seccion de contacto con un formulario  y diversas características modernas de desarrollo en React.
 
-First, run the development server:
+## Requisitos del Sistema
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Asegúrate de tener Node.js y npm instalados en tu máquina antes de ejecutar el proyecto.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalación
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clona el repositorio desde GitHub:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   git clone https://github.com/hlrivero18/User-profile.git
 
-## Learn More
+2. Navega al  directorio del proyecto:
+    ```bash
+    cd user-project
 
-To learn more about Next.js, take a look at the following resources:
+3. Instala las dependencias:
+    ```bash
+    npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Estructura del Proyecto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- /src: Contiene el código fuente del proyecto.
+   -  /Components: Componentes reutilizables.
+    - /app: Página principal y rutas.
+    - /utils: Utilidades y herramientas.
 
-## Deploy on Vercel
+## Comandos Útiles:
+- Iniciar el proyecto: ``` npm run dev ```
+- Ejecutar Pruebas Binarias: ``` npm test```
+- Realizar el build del proyecto: ``` npm run build```
+- Desplegar el proyecto: ``` npm start```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Subida a GitHub:
+- Subir todos los cambios: ````git add .```
+- Hacer un commit antes de subir: ```git commit -m 'subida'```
+- Pushear los cambio: ```git push```
+- Cambiar de rama: ```git checkout [nombre de la rama]```
+- actualizar la rama destino: ```git pull origin [rama destino]```
+- Unir cambios de una rama A a una rama B: ```git merge B```
+-
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ ## Visualización en Línea
+-  El proyecto está desplegado, puedes acceder a él [aquí](https://vercel.com/hlrivero18s-projects/user-profile/FLmx4xnFL3wiqojRnCHFGUSeCFwn)
+
+ ## Contribuciones
+- Siéntete libre de contribuir al proyecto abriendo problemas (issues) o enviando solicitudes de extracción (pull requests).
+
+*¡Gracias por revisar el proyecto! Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto.*
+
+**Hecho con ❤️ por Hector Luis Rivero!**
