@@ -21,8 +21,23 @@
 }
 
 .darkMode {
-  --colorDeFondo: #18191a;
-  --colorDeCard: #242526;
-  --colorDeNav: #18191a;
+  --colorDeFondo: #0f0f0f;
+  --colorDeNav: #212121;
+  --colorDeCard: #212121;
+  --colorBoton:#969897;
+  --colorBorde: #6a6e6d;
   --textColor: #ffff;
+  --textColorLabel: #f4f4f7a4;
+  --colorInput:#ffffff43;
+}
+
+.lightMode{
+    --colorDeFondo: #f4f2ee;
+    --colorDeNav: #ffff;
+    --colorDeCard: #ffff;
+    --colorBoton: #6a6e6d;
+    --colorBorde: #969897;
+    --textColor: #090909;
+    --textColorLabel: #05060f99;
+    --colorInput:#05060f0a;
 }

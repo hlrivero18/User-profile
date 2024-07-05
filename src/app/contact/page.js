@@ -72,21 +72,21 @@ export default function Contact() {
                     <div className={style.groupi}>
                         <div className={style.inputGroup}>
                             <label className={style.label} htmlFor="name">Nombre</label>
-                            <input className={style.input} id='name' type="text" name="name" value={inputs.name} onChange={handleChange} />
+                            <input className={style.input} placeholder="Escribe tu nombre" id='name' type="text" name="name" value={inputs.name} onChange={handleChange} />
                         </div>
                         <div className={style.inputGroup}>
                             <label className={style.label} htmlFor="lastName">Apellido</label>
-                            <input className={style.input} id='lastName' type="text" name="lastName" value={inputs.lastName} onChange={handleChange} />
+                            <input className={style.input} placeholder="Escribe tu apellido" id='lastName' type="text" name="lastName" value={inputs.lastName} onChange={handleChange} />
                         </div>
                     </div>
 
                     <div className={style.inputGroup}>
                         <label className={style.label} htmlFor="email">Email</label>
-                        <input className={style.email} id='email' type="email" name="email" value={inputs.email} onChange={handleChange} />
+                        <input className={style.email} placeholder="Escribe un email" id='email' type="email" name="email" value={inputs.email} onChange={handleChange} />
                     </div>
                     <div className={style.divMessage}>
                         <label className={style.label} htmlFor="message">Mensaje</label>
-                        <textarea className={style.message} id='message' type="text" name="message" value={inputs.message} onChange={handleChange} />
+                        <textarea className={style.message} placeholder="Escribe un mensaje" id='message' type="text" name="message" value={inputs.message} onChange={handleChange} />
                     </div>
                     {/* segun el estado de loading se aplicaran estilos y contenido a mi boton */}
                     <button className={loading ? style.btnLoading : style.btn} type="submit">

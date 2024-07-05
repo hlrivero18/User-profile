@@ -3,6 +3,7 @@
     text-align: center;
     background-color: var(--colorDeFondo);
     padding: 2rem;
+    color: var(--textColor);
 }
 
 .portada {

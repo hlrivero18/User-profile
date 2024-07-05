@@ -1,6 +1,7 @@
-import { Roboto_Mono, Lexend, Alata } from 'next/font/google';
 import style from './Nav.module.css'
 import Link from 'next/link';
+import StyleMode from '../StyleMode/StyleMode';
+import { GrContact } from "react-icons/gr";
 
 export default function Nav() {
     return (
@@ -8,9 +9,14 @@ export default function Nav() {
             <Link href="/" style={{ all: 'unset' }}>
                 <h3 className={style.sub}>Perfil de Usuario</h3>
             </Link>
-            <Link href="/contact" style={{ all: 'unset' }}>
-                <button className={style.btn}>Contactame!</button>
-            </Link>
+            <div className={style.etiquetas}>
+                <Link href="/contact" style={{ all: 'unset' }}>
+                    <h3 className={`${style.sub} ${style.contactL}`}>Contactame</h3>
+                    <h3 className={style.contact}><GrContact /></h3>
+                </Link>
+                {/*Toggle de estilos */}
+                <StyleMode />
+            </div>
         </nav>
 
     )

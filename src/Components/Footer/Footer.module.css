@@ -30,13 +30,14 @@
 }
 
 .container ul a:hover{
-    color: black;
+    color: var(--textColor)
 }
 
 .container span {
     display: block;
     font-size: 12px;
     text-align: center;
+    color: var(--textColor);
 }
 
 @media (max-width: 768px) {

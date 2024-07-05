@@ -1,5 +1,6 @@
 .nav {
   background-color: var(--colorDeNav);
+  color: var(--textColor);
   height: 3rem;
   position: fixed;
   z-index: 4;
@@ -66,12 +67,33 @@
   transform-origin: bottom left;
 }
 
+.etiquetas{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.contact{
+  display: none;
+}
+
 @media (max-width: 768px) {
   .nav{
     justify-content: space-between;
     font-size: 15px;
+    height: 4rem;
   }
   .btn{
     margin: 0px;
+  }
+
+  .contactL{
+    display: none;
+  }
+
+  .contact{
+    display: block;
+    font-size: 30px;
   }
 }
